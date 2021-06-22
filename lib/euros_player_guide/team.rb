@@ -1,11 +1,12 @@
 class EurosPlayerGuide::Team
-    attr_accessor :name, :team_url
+    attr_accessor :name, :team_url, :players
 
     @@all = []
 
     def initialize(name, team_url)
         @name = name
-        @team_url = team_url 
+        @team_url = team_url
+        @players = []
         save 
     end 
 

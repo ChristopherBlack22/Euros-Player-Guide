@@ -1,14 +1,21 @@
+require "pry"
+
 class EurosPlayerGuide::Player
-    attr_accessor :name, :player_url, :position, :club, :age, :squad_number, :games_played, :minutes_played 
+    attr_accessor :name, :number, :player_url, :team, :position, :club, :age, :games_played, :minutes_played 
 
     @@all = []
 
-    def initialize(name, player_url)
+    def initialize(name, number, player_url, team)
+         
         @name = name
+        @number = number
         @player_url = player_url
-        save
+        @team = team #new line
+        team.players << self #new line
+        #binding.pry 
+        #save
     end 
-        
+      #binding.pry   
     def create_attributes(player_attributes)
         player_attributes.each {|k, v| self.send(("#{k}="),v)}
     end 
