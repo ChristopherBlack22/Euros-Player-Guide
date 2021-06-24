@@ -1,8 +1,6 @@
 # EurosPlayerGuide
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/euros_player_guide`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A CLI program that lets the user see statistics for Euro 2020 players by selecting teams and players using data scraped from the official UEFA Euro 2020 website. 
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run ./bin/euros-player-guide
 
 ## Development
 
