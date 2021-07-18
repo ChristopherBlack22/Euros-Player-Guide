@@ -27,7 +27,7 @@ class EurosPlayerGuide::CLI
 
     def make_selections
         @input = nil       
-        until @input == "exit" #|| @input == "valid"
+        until @input == "exit"
             puts "Please select a team by typing the corresponding number, or type 'exit' to leave."
             @input = gets.strip.downcase    
             
@@ -35,8 +35,7 @@ class EurosPlayerGuide::CLI
                 team = @teams[(@input.to_i)-1] 
                 create_players(team) if team.players == []
                 list_players 
-                select_player #changed
-                #@input = "valid"   
+                select_player 
             elsif @input == "exit" 
 
             else
