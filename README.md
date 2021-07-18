@@ -1,6 +1,6 @@
 # EurosPlayerGuide
 
-A CLI program that lets the user see statistics for Euro 2020 players by selecting teams and players using data scraped from the official UEFA Euro 2020 website. 
+A CLI program that lets the user see statistics for players competing at UEFA Euro 2020. It allows a user to select a team to see the players in its squad, and then a player to see their individual stats. Data is scraped from the official UEFA Euro 2020 website. 
 
 ## Installation
 
@@ -30,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/euros_player_guide. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/euros_player_guide/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ChristopherBlack22/euros_player_guide. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/euros_player_guide/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -38,4 +38,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the EurosPlayerGuide project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/euros_player_guide/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the EurosPlayerGuide project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ChristopherBlack22/euros_player_guide/blob/master/CODE_OF_CONDUCT.md).
