@@ -21,7 +21,6 @@ class EurosPlayerGuide::Scraper
     end 
 
     def self.scrape_players(team) 
-        #binding.pry 
         target_page = team.team_url 
         doc = Nokogiri::HTML(open(target_page))
         
