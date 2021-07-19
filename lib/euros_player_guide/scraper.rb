@@ -2,7 +2,6 @@ require "open-uri"
 require "nokogiri"
 require_relative "team"
 require_relative "player" 
-require "pry"
 
 class EurosPlayerGuide::Scraper
 
