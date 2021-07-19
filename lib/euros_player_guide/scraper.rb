@@ -6,14 +6,12 @@ require_relative "player"
 class EurosPlayerGuide::Scraper
 
     def self.scrape_teams
-        #teams_page = "https://www.uefa.com/uefaeuro-2020/teams/"
         teams_page = "http://web.archive.org/web/20210622132909/https://www.uefa.com/uefaeuro-2020/teams/"
         doc = Nokogiri::HTML(open(teams_page))
 
         teams = doc.css("div.team.team-is-team a")
         teams.each do |team|
             name = team.attributes["title"].value
-            #team_url = "https://www.uefa.com#{team.attributes["href"].value}squad/"
             team_url = "#{team.attributes["href"].value}squad/".sub("/web/20210622132909/", "")
             EurosPlayerGuide::Team.new(name, team_url)
         end 
