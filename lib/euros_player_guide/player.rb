@@ -1,5 +1,6 @@
 class EurosPlayerGuide::Player
-    attr_accessor :name, :number, :player_url, :team, :position, :club, :age, :games_played, :minutes_played 
+    attr_accessor :position, :club, :age, :games_played, :minutes_played
+    attr_reader :name, :number, :player_url, :team 
 
     def initialize(name, number, player_url, team)
         @name = name
